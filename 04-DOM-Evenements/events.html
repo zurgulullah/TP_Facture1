@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="events.css">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Click</h1>
+    <div id="div1"> div1 </div>
+    <hr>
+    <h1>dblclick</h1>
+    <div id="div2"> div2 </div>
+    <hr>
+    <h1>mouseover</h1>
+    <div id="div3"> div3 </div>
+    <hr>
+    <h1>mouseout</h1>
+    <div id="div4"> div4 </div>
+    <hr>
+    <h1>mousedown</h1>
+    <div id="div5"> div5 </div>
+    <hr>
+    <h1>mouseup</h1>
+    <div id="div6"> div6 </div>
+    <hr>
+
+    <h1>blur</h1>
+    <form method="post" action=""><input type="text" id="div7"></form>
+    <hr>
+    <h1>focus</h1>
+    <form method="post" action=""><input type="text" id="div8"></form>
+    <hr>
+    <h1>change</h1>
+    <select size="1" id="div9">
+        <option>Chien</option>
+        <option>Chat</option>
+        <option>Hamster</option>
+    </select>
+    <hr>
+    <h1>keydown</h1>
+    <form method="post" action=""><input type="text" id="div10"></form>
+    <hr>
+    <h1>keypress</h1>
+    <form method="post" action=""><input type="text" id="div11"></form>
+    <hr>
+    <h1>keyup</h1>
+    <form method="post" action=""><input type="text" id="div12"></form>
+    <hr>
+    <h1>select</h1>
+    <input type="text" id="div13" value="Sélectionner texte">
+    <hr>
+
+    <h1>input</h1>
+    <input type="text" id="div14">
+    <p id="output"></p>
+    <hr>
+    
+    <h1>submit</h1>
+    <form method="post" action="" id="div15"><input type="submit"></form>
+    <hr>
+
+    <table border="1" cellpadding="5" style="border-collapse: collapse;">
+        <tbody>
+            <tr>
+                <th>Evénement</th>
+                <th>Description</th>
+            </tr>
+            <tr>
+                <td><b>Abort</b> <br>(onabort)</td>
+                <td>Cet événement a lieu lorsque l'utilisateur interrompt le chargement de l'image</td>
+            </tr>
+            <tr>
+                <td><b>Blur</b> <br>(onblur)</td>
+                <td>Se produit lorsque l'élément perd le focus, c'est-à-dire que l'utilisateur clique hors de cet
+                    élément, celui-ci n'est alors plus sélectionné comme étant l'élément actif.</td>
+            </tr>
+            <tr>
+                <td><b>Change</b>
+                    <br>(onchange)</td>
+                <td>Se produit lorsque l'utilisateur modifie le contenu d'un champ de données.</td>
+            </tr>
+            <tr>
+                <td> <b>Click</b>
+                    <br>(onclick)</td>
+                <td> Se produit lorsque l'utilisateur clique sur l'élément associé à l'événement.</td>
+            </tr>
+            <tr>
+                <td> <b>Dblclick</b>
+                    <br>(ondblclick)</td>
+                <td> Se produit lorsque l'utilisateur double-clique sur l'élément associé à l'événement (un lien
+                    hypertexte ou un élément de formulaire).</td>
+            </tr>
+            <tr>
+                <td><b>Dragdrop</b>
+                    <br>(ondragdrop)</td>
+                <td>Se produit lorsque l'utilisateur effectue un <i>glisser-déposer</i> sur la fenêtre du navigateur.
+                </td>
+            </tr>
+            <tr>
+                <td><b>Error</b>
+                    <br>(onerror)</td>
+                <td>Se déclenche lorsqu'une erreur apparaît durant le chargement de la page.</td>
+            </tr>
+            <tr>
+                <td><b>Focus</b>
+                    <br>(onfocus)</td>
+                <td>Se produit lorsque l'utilisateur donne le focus à un élément, c'est-à-dire que cet élément est
+                    sélectionné comme étant l'élément actif</td>
+            </tr>
+            <tr>
+                <td><b>keydown</b>
+                    <br>(onkeydown)</td>
+                <td>Se produit lorsque l'utilisateur appuie sur une touche de son clavier.</td>
+            </tr>
+            <tr>
+                <td><b>keypress</b>
+                    <br>(onkeypress)</td>
+                <td>Se produit lorsque l'utilisateur maintient une touche de son clavier enfoncée.</td>
+            </tr>
+            <tr>
+                <td><b>keyup</b>
+                    <br>(onkeyup)</td>
+                <td>Se produit lorsque l'utilisateur relâche une touche de son clavier préalablement enfoncée.</td>
+            </tr>
+            <tr>
+                <td><b>Load</b>
+                    <br>(onload)</td>
+                <td>Se produit lorsque le navigateur de l'utilisateur charge la page en cours</td>
+            </tr>
+            <tr>
+                <td><b>mousedown</b>
+                    <br>(mousedown)</td>
+                <td>Se produit lorsque l'utilisateur clique un élément</td>
+            </tr>
+            <tr>
+                <td><b>mouseup</b>
+                    <br>(mouseup)</td>
+                <td>Se produit lorsque l'utilisateur relache le clique</td>
+            </tr>
+            <tr>
+                <td><b>Mouseover</b>
+                    <br>(onmouseover)</td>
+                <td>Se produit lorsque l'utilisateur positionne le curseur de la souris au-dessus d'un élément</td>
+            </tr>
+            <tr>
+                <td><b>Mouseout</b>
+                    <br>(onmouseOut)</td>
+                <td>Se produit lorsque le curseur de la souris quitte un élément.</td>
+            </tr>
+            <tr>
+                <td><b>Reset</b>
+                    <br>(onreset)</td>
+                <td>Se produit lorsque l'utilisateur efface les données d'un formulaire à l'aide du bouton Reset.</td>
+            </tr>
+            <tr>
+                <td><b>Resize</b>
+                    <br>(onresize)</td>
+                <td>Se produit lorsque l'utilisateur redimensionne la fenêtre du navigateur</td>
+            </tr>
+            <tr>
+                <td><b>Select</b>
+                    <br>(onselect)</td>
+                <td>Se produit lorsque l'utilisateur sélectionne un texte (ou une partie d'un texte) dans un champ de
+                    type "text" ou "textarea"</td>
+            </tr>
+            <tr>
+                <td><b>Input</b>
+                    <br>(oninput)</td>
+                <td>Se produit lorsque l'utilisateur écrit ou modifie la valeur d'un input</td>
+            </tr>
+            <tr>
+                <td><b>Submit</b>
+                    <br>(onsubmit)</td>
+                <td>Se produit lorsque l'utilisateur clique sur le bouton de soumission d'un formulaire (le bouton qui
+                    permet d'envoyer le formulaire)</td>
+            </tr>
+            <tr>
+                <td><b>Unload</b>
+                    <br>(onunload)</td>
+                <td>Se produit lorsque le navigateur de l'utilisateur quitte la page en cours</td>
+            </tr>
+        </tbody>
+    </table>
+
+
+    <script type="text/javascript" src="events.js"></script>
+</body>
+</html>
