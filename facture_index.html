@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <title>Notice Facture</title>
+</head>
+<body>
+    <h1>FACTURE</h1>
+    <div class="container">
+    <form action="#" method="POST">
+        <div class="rectangle1">
+        <div>
+            <input type="text" id="nom" name="nom" placeholder="Nom de l'entreprise">
+        </div>
+        <div>
+            <input type="text" id="adresse" name="adresse" placeholder="Adresse de l'entreprise">
+        </div>
+        <div>
+            <input type="text" id="tel" name="tel" placeholder="Numéros de téléphone de l'entreprise">
+        </div>
+        <div>
+            <input type="email" id="email" name="email" placeholder="Adresse de messagerie">
+        </div>
+    </div>
+    <div class="rectangle2">
+        <div>
+            <label for="Facture">N° DE FACTURE :</label>
+            <input type="number" id="Facture" name="Facture" placeholder="N°">
+        </div>
+        <div>
+            <label for="date">DATE :</label>
+            <input type="date" id="date" name="date" value="2020-06-30">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col">
+    <h3>À :</h3>
+    <div class="rectangle3">
+        <select id="choix">
+          <option selected>Nouveau client</option>
+          <option id="net">Netscape 2.0</option>
+          <option>You and I Production</option>
+          <option>Starcraft Unity</option>
+          <option>Godus</option>
+        </select>
+        <div>
+            <input type="text"  id="societe" placeholder="Nom de la société">
+        </div>
+        <div>
+            <input type="text"  id="nom1" placeholder="Nom">
+        </div>
+        <div>
+            <input type="text"  id="rue" placeholder="Rue">
+        </div>
+        <div>
+            <input type="text"  id="code" placeholder="Code Postal/Ville">
+        </div>
+        <div>
+            <input type="text"  id="telephone" placeholder="Numéros de téléphone">
+        </div>
+    </div>
+</div>
+<div class="col">
+    <h3>EXPÉDIER À :</h3>
+    <div class="rectangle3">
+        <select id="choix2">
+          <option selected>Nouveau client</option>
+          <option>Cabinet Gerard</option>
+          <option>Putrovski corporation</option>
+          <option>Chinchan family</option>
+          <option>La main invisible</option>
+        </select>
+        <div>
+            <input type="text"  id="societe2" placeholder="Nom de la société">
+        </div>
+        <div>
+            <input type="text"  id="nom2" placeholder="Nom">
+        </div>
+        <div>
+            <input type="text"  id="rue2" placeholder="Rue">
+        </div>
+        <div>
+            <input type="text"  id="code2" placeholder="Code Postal/Ville">
+        </div>
+        <div>
+            <input type="text"  id="telephone2" placeholder="Numéros de téléphone">
+        </div>
+    </div>
+</div>
+</div>
+<h3 class="text-center">Détails des produits facturés</h3>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Code produit</th>
+        <th scope="col">Libellé Produit</th>
+        <th scope="col">Prix - Unitaire en euros</th>
+        <th scope="col">Quantité commandée</th>
+        <th scope="col">Montant en euros</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <th scope="row">
+            <select class="choix3">
+            <option></option>
+            <option>Dead By Daylight</option>
+            <option>Until Dawn</option>
+            <option>Cyberpunk 2077</option>
+            <option>Life is Strange 3</option>
+          </select></th>
+        <td></td>
+        <td></td>
+        <td>
+            <input type="number" id="quantite" name="quantite">
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">
+            <select class="choix3">
+            <option></option>
+            <option>Dead By Daylight</option>
+            <option>Until Dawn</option>
+            <option>Cyberpunk 2077</option>
+            <option>Life is Strange 3</option>
+          </select></th>
+        <td></td>
+        <td></td>
+        <td>
+            <input type="number" id="quantite" name="quantite">
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">
+            <select class="choix3">
+            <option></option>
+            <option>Dead By Daylight</option>
+            <option>Until Dawn</option>
+            <option>Cyberpunk 2077</option>
+            <option>Life is Strange 3</option>
+          </select></th>
+        <td></td>
+        <td></td>
+        <td>
+            <input type="number" id="quantite" name="quantite">
+        </td>
+        <td></td>
+      </tr>
+      <tr>
+        <th scope="row">
+            <select class="choix3">
+                <option></option>
+                <option>Dead By Daylight</option>
+                <option>Until Dawn</option>
+                <option>Cyberpunk 2077</option>
+                <option>Life is Strange 3</option>
+          </select></th>
+        <td></td>
+        <td></td>
+        <td>
+            <input type="number" id="quantite" name="quantite">
+        </td>
+        <td></td>
+      </tr>
+    </tbody>
+  </table>
+<hr>
+    <div class="row">
+    <div class=" offset-9" style="height: 200px;width: 300px;">
+        <h5>SOUS-TOTAL : </h5>
+        <h5>T.V.A 20,00% :</h5>
+        <h5>PORT & MANUTENTION :</h5>
+        <h5>TOTAL DU (TOTAL TTC) :</h5>
+    </div>
+    </div> 
+    </form>
+        <footer>
+            <p>Veuille rédiger tous les chèques à l'ordre de </p>
+            <p>Pour toute question concernant cette facture , veuillez contacter : DUPONT au <span id="outputtelephone"></span>
+            ou à l'adresse <span id="outputadresse"></span></p>
+            <p class="text-center">Nous vous remercions de votre confiance</p>
+        </footer>
+        <button>Imprimer cette page</button>
+    
+</div>
+    <script type="text/javascript" src="facture_js.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+</body>
+</html>
